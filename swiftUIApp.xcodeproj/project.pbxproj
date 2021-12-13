@@ -13,6 +13,9 @@
 		96687DEE27660533009E474F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96687DED27660533009E474F /* Preview Assets.xcassets */; };
 		968AF9B727660EDD00A16E9A /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 968AF9B527660EDD00A16E9A /* chimeup.mp3 */; };
 		968AF9B827660EDD00A16E9A /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 968AF9B627660EDD00A16E9A /* success.m4a */; };
+		968AF9BF2766149500A16E9A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968AF9BE2766149500A16E9A /* OnboardingView.swift */; };
+		968AF9C1276614A200A16E9A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968AF9C0276614A200A16E9A /* HomeView.swift */; };
+		968AF9C327661F7800A16E9A /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968AF9C227661F7800A16E9A /* CircleGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,10 @@
 		96687DED27660533009E474F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		968AF9B527660EDD00A16E9A /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		968AF9B627660EDD00A16E9A /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		968AF9BD2766143900A16E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		968AF9BE2766149500A16E9A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		968AF9C0276614A200A16E9A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		968AF9C227661F7800A16E9A /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +62,12 @@
 		96687DE527660530009E474F /* swiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
+				968AF9BD2766143900A16E9A /* Info.plist */,
+				968AF9BC2766110000A16E9A /* Utilities */,
+				968AF9BB276610ED00A16E9A /* Views */,
 				968AF9B927660EEE00A16E9A /* Sounds */,
 				96687DE627660530009E474F /* swiftUIAppApp.swift */,
-				96687DE827660530009E474F /* ContentView.swift */,
+				968AF9BA276610DF00A16E9A /* Screens */,
 				96687DEA27660533009E474F /* Assets.xcassets */,
 				96687DEC27660533009E474F /* Preview Content */,
 			);
@@ -79,6 +89,31 @@
 				968AF9B627660EDD00A16E9A /* success.m4a */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		968AF9BA276610DF00A16E9A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				96687DE827660530009E474F /* ContentView.swift */,
+				968AF9BE2766149500A16E9A /* OnboardingView.swift */,
+				968AF9C0276614A200A16E9A /* HomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		968AF9BB276610ED00A16E9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				968AF9C227661F7800A16E9A /* CircleGroupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		968AF9BC2766110000A16E9A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968AF9C327661F7800A16E9A /* CircleGroupView.swift in Sources */,
+				968AF9BF2766149500A16E9A /* OnboardingView.swift in Sources */,
+				968AF9C1276614A200A16E9A /* HomeView.swift in Sources */,
 				96687DE927660530009E474F /* ContentView.swift in Sources */,
 				96687DE727660530009E474F /* swiftUIAppApp.swift in Sources */,
 			);
@@ -287,12 +325,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swiftUIApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = swiftUIApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,12 +355,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swiftUIApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = swiftUIApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
